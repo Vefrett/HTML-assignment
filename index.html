@@ -1,16 +1,66 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="styles/stylesheet.css" media="screen"/>
         <title>My HTML Assignment</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>
+                This is the name of my Form, yo.
+            </h1>
+        </header>
+        <section>
+            <h2>Form Section</h2>
+        <form>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+            </div>
+            <div>
+                <label for="pword">Password:</label>
+                <input type="password" id="pword" name="pword"><br><br>
+            </div>
+            <div>
+                <label for="language">Select Language</label>
+                <select id="language" name="language">
+                    <option value="Spanish">Spanish</option>
+                    <option value="English">English</option>
+                    <option value="Portuguese">Portuguese</option>
+                </select><br><br>
+            </div>
+            <fieldset>
+                <legend>Select Gender</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+            </fieldset><br><br>
+            <div>
+                <button onClick="window.location.reload();">Submit</button>
+                <button type="button">Reset</button>
+            </div>
+            <section>
+                <h2> Here is a picture to view </h2>
+                <img src="Images/fullmetal.jpg" alt="fullmetal" width="120" height="80">
+            </section>
+        </form>
+        </section>
+        <footer>
+            <div class="copyright">
+            <script type="text/javascript">
+                var date=new Date(),
+                    year = date.getFullYear(),
+                    text = "Copyright ©" + year,
+                    html = '<div class="text-align-center">' + text + '</div>';
+                document.write(html);
+               </script>
+            </div>
+        </footer>
+        
     </body>
 </html>
